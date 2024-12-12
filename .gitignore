@@ -16,8 +16,17 @@ override.tf.json
 
 # Include tfplan files
 *.tfplan
+*tfplan*
 
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
 
+# Ignore credentials and configuration directories
+creds/*
+.terraform
+.idea
+.vscode
+
+# Ignore secrets files
+terraform.tfvars

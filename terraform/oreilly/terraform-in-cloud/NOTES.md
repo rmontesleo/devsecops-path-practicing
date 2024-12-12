@@ -53,6 +53,7 @@ terraform apply
 ### Terraform
 - [Tests](https://developer.hashicorp.com/terraform/language/tests)
 - [Argument Reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#argument-reference)
+- [Should .terraform.lock.hcl be included in the .gitignore file?](https://dev.to/techielass/should-terraformlockhcl-be-included-in-the-gitignore-file-5aa0)
 
 
 ### Cisco
@@ -80,6 +81,6 @@ terraform apply
 - [Consider security groups with source security groups when hashing #2376](https://github.com/hashicorp/terraform/pull/2376)
 
 
-- []()
-- []()
+- [What is the best practise with .terraform.lock.hcl in modules … commit or not?](https://discuss.hashicorp.com/t/what-is-the-best-practise-with-terraform-lock-hcl-in-modules-commit-or-not/28648)
+- [Should .terraform.lock.hcl be included in the .gitignore file?](https://stackoverflow.com/questions/67963719/should-terraform-lock-hcl-be-included-in-the-gitignore-file)
 - []()

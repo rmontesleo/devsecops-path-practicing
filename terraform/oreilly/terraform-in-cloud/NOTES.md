@@ -33,12 +33,57 @@ terraform apply
 # add a new tag from console and see what happend when apply again
 terraform apply
 
+terraform apply -auto-approve
 
-# 1 Terraform know what allready has done
-# 2 script is the source of true
+#
+terraform -help
+
+# 
+terraform destroy
+
+# 2 IMPORTANT THINGS  TO REMEMBER ! ! !
+# 1) Terraform know what allready has done
+# 2) script is the source of true
+
+# Security group is a network rule
+# Data is great use case to get information about cloud elements
+# Data is a way to inject cloud information inside the 
+
+
+# we can override the variables in the execution
+terraform apply -var port=8080
+
+# also can override the default value with environment variables
+# we can use many vaults or other resources to read env variables.
+# using TF_VAR_ then the name of the variable
+export TF_VAR_port=7000
+terraform apply
+
 
 ```
 
+### Other commands executed in sample
+```bash
+
+# to see final results use git stage
+
+
+#
+ghcs "how to cut the grep result to avoid display the hole string the execution was env | grep aws"
+
+#
+ env  | cut -d '=' -f 1
+
+#
+aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,State.Name,Tags[?Key==`Name`].Value|[0]]' --output table
+
+# List all vpc in your infrastructure
+aws ec2 describe-vpcs --output json
+
+#
+git stash
+
+```
 
 
 ## Rererences
@@ -64,7 +109,7 @@ terraform apply
 - [github_repository](https://registry.terraform.io/providers/integrations/github/latest/docs/resources/repository)
 - [GitHub Provider](https://registry.terraform.io/providers/integrations/github/latest/docs)
 - [Managing GitHub with Terraform](https://www.hashicorp.com/blog/managing-github-with-terraform)
-
+- [terratest]()
 
 ### AWS
 - [Configuration and credential file settings in the AWS CLI](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-files.html)

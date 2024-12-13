@@ -1,6 +1,6 @@
 provider "aws" {
-  access_key = "<INSERT_YOUR_AWS_ACCESS_KEY_HERE>"
-  secret_key = "<INSERT_YOUR_AWS_SECRET_KEY_HERE>"
+  #access_key = "<INSERT_YOUR_AWS_ACCESS_KEY_HERE__OR_TAKE_IT_FROM_ENVIRONMENT>"
+  #secret_key = "<INSERT_YOUR_AWS_SECRET_KEY_HERE__OR_TAKE_IT_FROM_ENVIRONMENT>"
   region     = "us-east-1"
 }
 
@@ -14,3 +14,18 @@ provider "aws" {
 # Be sure to tag it with:
 # - "Name" to "exercise_0010"
 # - "Terraform" to true
+
+resource aws_instance "exercise_0010" {
+  ami           = "ami-07ebfd5b3428b6f4d"
+  instance_type = "t2.micro"
+
+  tags = {
+    Name      = "exercise_0010"
+    Terraform = true
+  }
+}
+
+# instructions to be executed in the terminal
+# terraform init
+# terraform plan
+# terraform apply -> yes

@@ -92,13 +92,24 @@ git stash
 - [Terraform In the Cloud](https://learning.oreilly.com/live-events/terraform-in-the-cloud/0636920401407/0642572001786/)
 - [terraform-workshop](https://github.com/looselytyped/terraform-workshop)
 - [PDF Slides](https://on24static.akamaized.net/event/46/01/19/3/rt/1/documents/resourceList1720545405620/terraformingyourcloud11720545405620.pdf)
-- [Terraform: Up & Running, 2nd Edition](https://learning.oreilly.com/library/view/terraform-up/9781492046899/)
 - [Head First Software Architecture](https://learning.oreilly.com/library/view/head-first-software/9781098134341/)
+- [Terraform Cookbook](https://learning.oreilly.com/library/view/terraform-cookbook/9781098108458/)
+- [Mastering Terraform](https://learning.oreilly.com/library/view/mastering-terraform/9781835086018/)
+- [Architecting AWS with Terraform](https://learning.oreilly.com/library/view/architecting-aws-with/9781803248561/)
+- [Terraform: Up and Running, 3rd Edition](https://learning.oreilly.com/library/view/terraform-up-and/9781098116736/)
+- [Terraform: Up & Running, 2nd Edition](https://learning.oreilly.com/library/view/terraform-up/9781492046899/)
+
+
+
 
 ### Terraform
 - [Tests](https://developer.hashicorp.com/terraform/language/tests)
 - [Argument Reference](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance#argument-reference)
 - [Should .terraform.lock.hcl be included in the .gitignore file?](https://dev.to/techielass/should-terraformlockhcl-be-included-in-the-gitignore-file-5aa0)
+
+
+### Terragrunt
+- [Terragrunt](https://terragrunt.gruntwork.io/)
 
 
 ### Cisco

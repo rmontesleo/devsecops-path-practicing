@@ -74,7 +74,7 @@ ghcs "how to cut the grep result to avoid display the hole string the execution 
 #
  env  | cut -d '=' -f 1
 
-#
+# list all you ec2 instances
 aws ec2 describe-instances --query 'Reservations[*].Instances[*].[InstanceId,State.Name,Tags[?Key==`Name`].Value|[0]]' --output table
 
 # List all vpc in your infrastructure

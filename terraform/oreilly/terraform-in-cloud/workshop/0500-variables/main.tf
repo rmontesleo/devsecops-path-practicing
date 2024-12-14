@@ -21,7 +21,16 @@ data "aws_ami" "latest_ubuntu" {
 # instance type = t2.micro
 #
 # Be sure to tag it with:
-# - "Name" to "exercise_0040"
+# - "Name" to "exercise_0050"
 # - "Terraform" to true
 #
 # Add a THIRD tag called `env` that uses the value of the `tier` variable
+resource "aws_instance" "exercise_0050" {
+  ami = data.aws_ami.latest_ubuntu.id
+  instance_type = "t2.micro"
+  tags = {
+    Name = "${upper(var.tier)}-exercise_0050"
+    Terraform = true
+    env = var.tier
+  }
+}
